@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AF3C8D85DC0EA2515E03D1B /* Pods_SDWebImageFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A57606128DCD26ACA78F77 /* Pods_SDWebImageFramework.framework */; };
 		6D4EAD6E20D4E15D003267D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EAD6D20D4E15D003267D9 /* AppDelegate.swift */; };
 		6D4EAD7020D4E15D003267D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EAD6F20D4E15D003267D9 /* ViewController.swift */; };
 		6D4EAD7320D4E15D003267D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4EAD7120D4E15D003267D9 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58A57606128DCD26ACA78F77 /* Pods_SDWebImageFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4EAD6A20D4E15D003267D9 /* SDWebImageFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebImageFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4EAD6D20D4E15D003267D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D4EAD6F20D4E15D003267D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6D4EAD7720D4E15D003267D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D4EAD7A20D4E15D003267D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D4EAD7C20D4E15D003267D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A766A6EFEFA539C8EBA222A6 /* Pods-SDWebImageFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageFramework/Pods-SDWebImageFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		E8777D43900B7326CEBD4CD9 /* Pods-SDWebImageFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageFramework/Pods-SDWebImageFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF3C8D85DC0EA2515E03D1B /* Pods_SDWebImageFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE2058F6E63CAC0AC52E0A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A57606128DCD26ACA78F77 /* Pods_SDWebImageFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D4EAD6120D4E15C003267D9 = {
 			isa = PBXGroup;
 			children = (
 				6D4EAD6C20D4E15D003267D9 /* SDWebImageFramework */,
 				6D4EAD6B20D4E15D003267D9 /* Products */,
+				DF15C396FB0FD68CCC7F945A /* Pods */,
+				0CE2058F6E63CAC0AC52E0A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = SDWebImageFramework;
 			sourceTree = "<group>";
 		};
+		DF15C396FB0FD68CCC7F945A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A766A6EFEFA539C8EBA222A6 /* Pods-SDWebImageFramework.debug.xcconfig */,
+				E8777D43900B7326CEBD4CD9 /* Pods-SDWebImageFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D4EAD7F20D4E15D003267D9 /* Build configuration list for PBXNativeTarget "SDWebImageFramework" */;
 			buildPhases = (
+				A9F0EA5AB8B2C2ED83083DFF /* [CP] Check Pods Manifest.lock */,
 				6D4EAD6620D4E15D003267D9 /* Sources */,
 				6D4EAD6720D4E15D003267D9 /* Frameworks */,
 				6D4EAD6820D4E15D003267D9 /* Resources */,
+				6059BDA7CB4B32AAA35C9238 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6059BDA7CB4B32AAA35C9238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageFramework/Pods-SDWebImageFramework-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageFramework/Pods-SDWebImageFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F0EA5AB8B2C2ED83083DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDWebImageFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D4EAD6620D4E15D003267D9 /* Sources */ = {
@@ -276,6 +345,7 @@
 		};
 		6D4EAD8020D4E15D003267D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A766A6EFEFA539C8EBA222A6 /* Pods-SDWebImageFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +360,7 @@
 		};
 		6D4EAD8120D4E15D003267D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8777D43900B7326CEBD4CD9 /* Pods-SDWebImageFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
